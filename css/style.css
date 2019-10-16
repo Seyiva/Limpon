@@ -5,17 +5,69 @@ font-size: 16px;
 color: #7581a1;
 line-height: 26px;
 }
+
 a {
 text-decoration: none;
 }
 h1 {
 font-size: 80px;
+line-height:1.1em;
+letter-spacing: -2.5px;
 font-weight: 600;
 text-align: left;
 color: #192b59;
+max-width: 540px;
+margin-bottom: 65px;
 }
 
-.nav {display: block;
+.title-h2 {
+font-size: 50px;
+font-weight: 600;
+color: #192b59;
+line-height: 1.2em;
+letter-spacing: -1.5px;
+}
+.title-h2 span {
+display: block;
+font-size: 16px;
+font-weight: 800;
+color: #1085E4;
+margin-bottom: 14px;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+
+.title-40 {
+font-size: 40px;
+font-weight: 600;
+color: #192b59;
+line-height: 1.2em;
+letter-spacing: -1.1px;
+}
+.title-40 span {
+display: block;
+font-size: 18px;
+margin-bottom: 20px;
+letter-spacing: 3.5px;
+font-weight: 800;
+color: #1085E4;
+text-transform: uppercase;
+}
+
+
+.page-stat .title-h2, .page-screen .title-h2 {
+margin: 0 auto;
+text-align: center;
+}
+.page-stat .title-h2 {
+max-width: 500px;
+}
+
+.wrap {max-width: 1110px; 
+margin: 0 auto;
+
+}
+.nav {display: flex;
 font-size: 12px;
 color: #6e7ea9;
 text-transform: uppercase;
@@ -24,12 +76,13 @@ list-style-type: none;
 margin: 0;
 padding: 0;
 }
-.nav-side{display: inline-block;
-padding: 25px 0;
-/*position:relative;*/
-padding-left: 41px;
+.nav>li {
+padding: 0 15px;
 }
 
+.nav-item {
+color: #6e7ea9;
+}
 .btn-free {color: #fff;
 text-transform: uppercase;
 font-size: 12px;
@@ -113,3 +166,59 @@ color: #1085E4;
 font-weight: 600;
 }
 
+.list-stat {
+display: flex;
+justify-content: space-around;
+list-style-type: none;
+margin-top: 76px;
+}
+.list-stat>li {
+font-size: 12px;
+font-weight: 700;
+color: #1085E4;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 2.7px;
+}
+.list-stat>li>span {
+display: block;
+font-size: 60px;
+color: #bacbdc;
+margin-bottom: 23px;
+letter-spacing: 0;
+}
+
+.screen {
+margin-top: 36px;
+margin-bottom: -29px;
+}
+.box-price {
+display: flex;
+justify-content: space-between;
+}
+.box-price-item {
+background-color: #f5faff;
+}
+.box-price-item-active {
+background-color: #192b59;
+color: #fff;
+}
+.box-price-item ul {
+list-style-type: none;
+padding-left: 0;
+}
+
+/* PAGE */
+.page-stat, .page-screen  {
+background-color: #edf6ff;
+
+}
+.page-stat {
+padding: 116px 0 96px 0;
+}
+.page-plan, .page-screen{text-align: center;
+}
+
+.page-screen {
+    padding: 116px 0 0 0;
+}
