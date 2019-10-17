@@ -10,14 +10,14 @@ a {
 text-decoration: none;
 }
 h1 {
-font-size: 80px;
+font-size: 60px;
 line-height:1.1em;
 letter-spacing: -2.5px;
 font-weight: 600;
 text-align: left;
 color: #192b59;
 max-width: 540px;
-margin-bottom: 65px;
+margin-bottom: 55px;
 }
 
 .title-h2 {
@@ -65,6 +65,19 @@ max-width: 500px;
 
 .wrap {max-width: 1110px; 
 margin: 0 auto;
+}
+.box-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+/*padding-top: 53px;*/
+margin-bottom: 305px;
+}
+.logo {display: block;
+background-image: url(../img/logo.png);
+background-repeat: no-repeat;
+width: 181px;
+height: 49px;
 
 }
 .nav {display: flex;
@@ -77,11 +90,22 @@ margin: 0;
 padding: 0;
 }
 .nav>li {
-padding: 0 15px;
+padding: 0 20px;
 }
 
 .nav-item {
 color: #6e7ea9;
+letter-spacing: 2px;
+}
+.screen-img{
+display: block;
+background-image: url(../img/header_screen.png);
+background-repeat: no-repeat;
+width: 835px;
+height: 735px;
+position: absolute;
+right: 0;
+top: 189px;
 }
 .btn-free {color: #fff;
 text-transform: uppercase;
@@ -142,6 +166,43 @@ border-radius: 30px;
 color:#fff;
 background-color:#192b59;
 }
+
+.list-company {
+max-width: 1110px; 
+margin: 0 auto;
+list-style-type: none;
+padding: 0px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.list-company-item {
+display: block;
+}
+.company-one {
+background-image: url(../img/token.png);
+background-repeat: no-repeat;
+flex-basis: 202px;
+height: 63px;
+}
+.company-two {
+background-image: url(../img/Magneto.png);
+background-repeat: no-repeat;
+flex-basis: 209px;
+height: 69px;
+}
+.company-three {
+background-image: url(../img/boohoo.png);
+background-repeat: no-repeat;
+flex-basis: 215px;
+height: 65px;
+}
+.company-four {
+background-image: url(../img/fractal.png);
+background-repeat: no-repeat;
+flex-basis: 218px;
+height: 88px;
+}
 .grid, h2 {
 font-size: 40px;
 color: #192b59;
@@ -198,17 +259,59 @@ justify-content: space-between;
 }
 .box-price-item {
 background-color: #f5faff;
+padding: 50px 50px;
 }
 .box-price-item-active {
 background-color: #192b59;
 color: #fff;
 }
-.box-price-item ul {
+
+/*попытки сделать цвет в стоимости тарифов до .мо*/
+.box-price-item-free-350 {
+color: #192b59;
+font-size: 50px;
+}
+.box-price-item-free-350 span {
+display: inline-block;
+color: #98999e;
+}
+
+.box-price-item-90 {
+color: #fff;
+font-size: 50px;
+margin-bottom: 0;
+}
+.box-price-item-90 span {
+display: inline-block;
+color: #fff;
+
+}
+.mo {color: #a8c5e3
+}
+
+.box-price-item ul{
 list-style-type: none;
 padding-left: 0;
 }
-
+.box-price-item-active ul {
+list-style-type: none;
+padding-left: 0;
+}
 /* PAGE */
+
+.page-header {
+background-image: url(../img/Home.png);
+background-repeat: no-repeat;
+background-size: cover;
+padding: 53px 0 330px ;
+position: relative;
+}
+.page-company {
+background-image: url(../img/bg-layer3.png);
+background-repeat: no-repeat;
+background-size: cover;
+padding: 146px 0 99px ;
+}
 .page-stat, .page-screen  {
 background-color: #edf6ff;
 
@@ -220,5 +323,16 @@ padding: 116px 0 96px 0;
 }
 
 .page-screen {
-    padding: 116px 0 0 0;
+padding: 116px 0 0 0;
+}
+
+.page-subscribe {
+background: rgba(10,32,144,1);
+background: -moz-linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(34,115,202,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(34,115,202,1)));
+background: -webkit-linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(34,115,202,1) 100%);
+background: -o-linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(34,115,202,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(34,115,202,1) 100%);
+background: linear-gradient(45deg, rgba(10,32,144,1) 0%, rgba(34,115,202,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2273ca', GradientType=1 );
 }
