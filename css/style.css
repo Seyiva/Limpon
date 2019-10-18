@@ -53,6 +53,82 @@ font-weight: 800;
 color: #1085E4;
 text-transform: uppercase;
 }
+/* for subscribe*/
+
+.subscribe-content-block{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.title-h2-subscribe {
+font-size: 50px;
+font-weight: 600;
+color: #fff;
+line-height: 1.2em;
+letter-spacing: -1.5px;
+}
+
+.title-h2-subscribe span {
+display: block;
+font-size: 18px;
+margin-bottom: 20px;
+letter-spacing: 3.5px;
+font-weight: 800;
+color: #1085E4;
+text-transform: uppercase;
+}
+.subscribe-content {
+color: #fff;
+font-size: 18px;
+font-weight: 400;
+line-height: 1.2em;
+max-width: 437px;
+padding-bottom: 20px;
+}
+.box-subscribe-user {
+position: relative;
+}
+.box-subscribe-child{
+flex-basis: 49%;
+}
+.box-subscribe-user input {display: block;
+border: 2px solid #3f5cb1;
+border-radius: 45px;
+height: 52px;
+width: 100%;
+line-height: 22px;
+font-size: 14px;
+padding: 25px 230px 25px 37px;
+background: transparent;
+color: #fff;
+width: 100%;
+box-sizing: border-box;
+}
+
+
+.box-subscribe-user .btn-primary {
+position: absolute;
+top: 5px;
+right: 5px;
+padding: 14px 45px;
+}
+/*.email {
+border: 1px solid #fff;
+border-radius: 30px 30px;
+height: 52px;
+width: 345px;
+line-height: 22px;
+font-size: 12px;
+padding: 0 23px;
+background: none;
+color: #fff;
+}
+*/
+
+
 
 
 .page-stat .title-h2, .page-screen .title-h2 {
@@ -138,6 +214,10 @@ letter-spacing: 0.5px;
 .btn-primary:hover {color:#1085E4;
 background-color: #fff;
 }
+.i90 {
+padding: 15px 70px;
+}
+
 .btn-secondary {color: #748da2;
 text-transform: uppercase;
 font-size: 12px;
@@ -165,6 +245,9 @@ border-radius: 30px;
 .btn-info:hover {
 color:#fff;
 background-color:#192b59;
+}
+.free-350 {
+padding: 15px 70px;
 }
 
 .list-company {
@@ -203,6 +286,43 @@ background-repeat: no-repeat;
 flex-basis: 218px;
 height: 88px;
 }
+
+/*GRID*/
+.grid {
+display: grid;
+grid-template-areas: "a b c"
+                     "d b c"
+                     "d f g"
+                     "e f g"
+                     "e f g"
+                     "e h h";
+max-width: 1110px;
+margin: 0 auto;
+}
+.grid-title {
+grid-area: a;
+}
+.grid-item-1 {
+grid-area: b;
+}
+.grid-item-2 {
+grid-area: c;
+}
+.grid-item-3 {
+grid-area: d;
+}
+.grid-item-4 {
+grid-area: e;
+}
+.grid-item-5 {
+grid-area: f;
+}
+.grid-item-6 {
+grid-area: g;
+}
+.grid-item-6 {
+grid-text: h;
+}
 .grid, h2 {
 font-size: 40px;
 color: #192b59;
@@ -214,17 +334,58 @@ font-size: 14px;
 color: #1085E4;
 display: block;
 }
+.grid-item {
+text-align: center;
+box-shadow: 0 0 5px #f4f4f4;
+}
+
 
 .grid-item, h3 {
 font-size: 20px;
 color: #192b59;
 font-weight: 600;
+margin-bottom:18px;
 }
 
 .grid-item, a {
 font-size: 14px;
 color: #1085E4;
 font-weight: 600;
+}
+.grid-icon{
+background-repeat: no-repeat;
+display: block;
+margin: 0 auto 36px;
+}
+.grid-icon-1 {
+background-image: url(../img/icon-1.png);
+width: 55px;
+height: 70px;
+}
+.grid-icon-2 {
+background-image: url(../img/icon-2.png);
+width: 73px;
+height: 70px;
+}
+.grid-icon-3 {
+background-image: url(../img/icon-3.png);
+width: 54px;
+height: 71px;
+}
+.grid-icon-4 {
+background-image: url(../img/icon-4.png);
+width: 70px;
+height: 70px;
+}
+.grid-icon-5 {
+background-image: url(../img/icon-5.png);
+width: 70px;
+height: 70px;
+}
+.grid-icon-6 {
+background-image: url(../img/icon-6.png);
+width: 74px;
+height: 70px;
 }
 
 .list-stat {
@@ -256,6 +417,7 @@ margin-bottom: -29px;
 .box-price {
 display: flex;
 justify-content: space-between;
+outline: solid 2px #111;
 }
 .box-price-item {
 background-color: #f5faff;
@@ -264,12 +426,14 @@ padding: 50px 50px;
 .box-price-item-active {
 background-color: #192b59;
 color: #fff;
+padding: 50px 50px;
 }
 
 /*попытки сделать цвет в стоимости тарифов до .мо*/
 .box-price-item-free-350 {
 color: #192b59;
 font-size: 50px;
+margin-bottom: 0;
 }
 .box-price-item-free-350 span {
 display: inline-block;
@@ -292,11 +456,29 @@ color: #fff;
 .box-price-item ul{
 list-style-type: none;
 padding-left: 0;
+line-height: 2em;
 }
 .box-price-item-active ul {
 list-style-type: none;
 padding-left: 0;
+line-height: 2em;
+padding-bottom: 20px;
 }
+/*почему отдельно работают крайние 2 столба? Самостояетельно двигаются кнопки*/
+.box-price-list {
+line-height: 2em;
+padding-bottom: 15%;
+}
+
+.box-subscribe-user input:focus, .box-subscribe-user .btn-primary {
+outline: none;
+}
+.box-subscribe-user::-webkit-input-placeholder {color:#b1c3ee;}
+.box-subscribe-user::-moz-placeholder          {color:#b1c3ee;}/* Firefox 19+ */
+.box-subscribe-user:-moz-placeholder           {color:#b1c3ee;}/* Firefox 18- */
+.box-subscribe-user:-ms-input-placeholder      {color:#b1c3ee;}
+
+
 /* PAGE */
 
 .page-header {
