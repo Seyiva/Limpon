@@ -563,6 +563,7 @@ color: #192b59;
 margin-bottom: 0;
 line-height: 1.1;
 letter-spacing: -0.6px;
+padding-bottom: 20px;
 }
 .box-clients-item .position {
 font-size: 14px;
@@ -628,6 +629,7 @@ margin: 0 auto;
 border: none;
 padding: 0;
 transition: 0.3s;
+display: flex;
 }
 .box-team-item .btn-team:hover {
 background-color: #1085e4;
@@ -637,16 +639,15 @@ background-image: url(../img/btn-team.png);
 background-repeat: no-repeat;
 display: block;
 margin: 0 auto;
+align-self: center;
 }
 .box-team-item .btn-more span {
-
-background-position: -4px -4px;
+background-position: -4px -5px;
 width: 20px;
 height: 21px;
-
 }
 .box-team-item .btn-more:hover span . {
-    background-position: -4px -30px;
+background-position: -4px -30px;
 }
 .box-team-item .btn-more:focus {
 outline: none;
@@ -655,9 +656,42 @@ outline: none;
 display: flex;
 list-style-type: none;
 justify-content: space-between;
+padding: 12px 29px 42px 28px ;
+box-sizing: border-box;
+margin: 0;
 }
-
-
+.box-team-item .btn-fb span {
+background-position: -32px -5px;
+width: 14px;
+height: 21px;
+}
+.box-team-item .btn-fb:hover span {
+    background-position: -32px -38px;
+}
+.box-team-item .btn-tw span {
+    background-position: -62px -5px;
+    width: 14px;
+    height: 21px;
+}
+.box-team-item .btn-tw:hover span {
+    background-position: -62px -38px;
+}
+.box-team-item .btn-be span {
+background-position: -85px -4px;
+width: 24px;
+height: 21px;
+}
+.box-team-item .btn-be:hover span {
+    background-position: -85px -38px;
+}
+.box-team-item .btn-web span {
+background-position: -112px -4px;
+width: 21px;
+height: 21px;
+}
+.box-team-item .btn-web:hover span {
+    background-position: -112px -38px;
+}
 /*PLANS*/
 .box-price-item-free-350 {
 color: #192b59;
@@ -712,7 +746,29 @@ outline: none;
 .box-subscribe-user:-moz-placeholder           {color:#b1c3ee;}/* Firefox 18- */
 .box-subscribe-user:-ms-input-placeholder      {color:#b1c3ee;}
 
+.object-circle {
+    display: block;
+    position: absolute;
+    left: -255px;
+    bottom: -250px;
+    width: 750px;
+    height: 700px;
+background-image: url(../img/circle.svg);
+background-repeat: no-repeat;
+background-size: cover;
 
+}
+.object-rhombus {
+    background-image: url(../img/square.svg);
+    display: block;
+    position: absolute;
+    right: -255px;
+    top: -250px;
+    width: 750px;
+    height: 650px;
+    background-repeat: no-repeat;
+background-size: cover;
+}
 /* PAGE */
 
 .page-header {
@@ -734,6 +790,7 @@ background-color: #edf6ff;
 }
 .page-stat {
 padding: 116px 0 96px 0;
+position: relative;
 }
 .page-plan {
 padding: 81px 0 121px 0;
