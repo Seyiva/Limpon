@@ -38,6 +38,12 @@
             <li><a href="" class="nav-item">Team</a></li>
             <li><a href="" class="btn-primary, btn-free">Free Trail </a></li>
         </ul>
+        <button class="btn-menu" type="button"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="124px" height="124px" viewBox="0 0 124 124" style="enable-background:new 0 0 124 124;" xml:space="preserve">
+       <g>
+           <path d="M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z"/>
+           <path d="M112,50H12C5.4,50,0,55.4,0,62c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12C124,55.4,118.6,50,112,50z"/>
+           <path d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z"/></g></svg></button>
     </div>
     <div class="wrap">
         <h1> Best Software Landingpage</h1>
@@ -50,10 +56,10 @@
  </div>
     <div class="page-company">
         <ul class="list-company">
-        <li class="list-company-item company-one"></li>
-        <li class="list-company-item company-two"></li>
-        <li class="list-company-item company-three"></li>
-        <li class="list-company-item company-four"></li>
+        <li class="list-company-item company-one"><span></span></li>
+        <li class="list-company-item company-two"><span></span></li>
+        <li class="list-company-item company-three"><span></span></li>
+        <li class="list-company-item company-four"><span></span></li>
         </ul>
     </div>
     <div class="page-grid">
@@ -360,6 +366,18 @@
             </div>
         </div>
     </div>
+<div class="modal">
+    <button class="btn-close" type="button"><span>$xtr</span></button>
+    <ul class="nav-modal">
+        <li><a href="" class="nav-item">Home</a></li>
+        <li><a href="" class="nav-item">Features</a></li>
+        <li><a href="" class="nav-item">Video</a></li>
+        <li><a href="" class="nav-item">Screens</a></li>
+        <li><a href="" class="nav-item">Pricing</a></li>
+        <li><a href="" class="nav-item">Team</a></li>
+        <li><a href="" class="btn-primary, btn-free">Free Trail </a></li>
+    </ul>
+</div>
 <script
 src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>
@@ -375,6 +393,12 @@ $(document).ready(function(){
     $(".btn-thomas").click(function(){
         $(".btn-thomas").hide();
     $(".social-thomas").fadeIn();
+    });
+    $(".btn-menu").click (function(){
+        $(".modal").show();
+    });
+    $(".btn-close").click (function(){
+        $(".modal").hide();
     });
 });
 </script>
