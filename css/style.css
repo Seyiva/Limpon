@@ -210,12 +210,11 @@ top: 189px;
 }
 .btn-menu {
 border: none;
-
 background-color: transparent ;
+display: none;
 }
 .btn-menu:focus {
-    outline: none;
-    display: none;
+outline: none;
 }
 .btn-menu svg {
 width: 35px;
@@ -601,6 +600,7 @@ width: 45%;
 position: absolute;
 left: 0;
 padding-top: 150px;
+
 }
 
 /*APP*/
@@ -638,8 +638,7 @@ text-align: center;
 top: 40px;
 margin: 0;
 }
-/*все как в уроке и уже есть понимание блок/инлайн блок, 
-но не встает как нужно даже близко*/
+
 .content-app {
 width: 55%;
 }
@@ -695,6 +694,8 @@ display: flex;
     justify-content: space-around;
 list-style-type: none;
 margin-top: 76px;
+padding: 0;
+flex-wrap: wrap;
 }
 .list-stat>li {
 font-size: 12px;
@@ -703,6 +704,7 @@ color: #1085E4;
 text-align: center;
 text-transform: uppercase;
 letter-spacing: 2.7px;
+
 }
 .list-stat>li>span {
 display: block;
@@ -726,6 +728,7 @@ display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
 margin-top: 83px;
+flex-wrap: wrap;
 }
 .box-price-item {
 background-color: #f5faff;
@@ -1099,6 +1102,8 @@ display: flex;
         align-items: center;
 max-width: 1100px;
 margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
 }
 .flex-form img {
 margin-right: 60px;
@@ -1309,10 +1314,10 @@ padding: 120px 0 121px 0;
 /* MEDIA */
 @media (max-width:1500px) {
 .screen-img {
-    background-size: cover;
-    width: 50%;
-    height: 579px;
-    top: 250px;
+background-size: cover;
+width: 50%;
+height: 579px;
+top: 250px;
 }   
 .video-app {
 top: -22px;
@@ -1322,79 +1327,130 @@ right: 0;
 width: 482px;
 }
 }
-@media (max-width:1400px) {
+@media (max-width:1300px) {
+.soft-screen {
+    display: none;
+}
+    .page-software {
+    padding: 60px 0;
     
-    }
+}
+.page-software-list {
+    height: 266px;
+    max-width: 800px;
+    margin-right: 50px;
+}
+.page-software-flex {
+    justify-content: center;
+
+}
+.page-software-flex>div {
+    flex-basis: 100%;
+}
+}
 @media (max-width:1100px) {
-    .nav, .screen-img {
-        display: none;
-    }
+.nav, .screen-img {
+    display: none;
+}
 .btn-menu {
-    display: block;
+display: block;
 }
 h1 {
-    margin-bottom: 65px;
-    text-align: center;
-    margin: 0 auto 45px;
+margin-bottom: 65px;
+text-align: center;
+margin: 0 auto 45px;
 }
 .btn-group {
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: center;
 }
 .box-header {
-    padding: ;
-    margin-bottom: 100px;
+padding: ;
+margin-bottom: 100px;
 }
 .page-header {
-    padding: 57px 0 150px 0;
+padding: 57px 0 150px 0;
+}
+
+.list-company-item {
+-ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+margin-bottom: 50px;
+}
+.list-company-item span {
+margin: 0 auto;
+}
+.page-company {
+padding: 50px 0 20px ;
+}
+.grid {
+
+grid-template-areas: "a b "
+                        "c d "
+                        "e f"
+                        "g "
+                        "h";
+
+}
+.grid h2 {
+    text-align: center;
+}
+.grid h2 span {
+    margin-bottom: 10px;
+}
+.subscribe-content-block { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse;}
+.box-subscribe-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+}
+.box-subscribe-text {  margin: 0 auto 30px;}
+.box-subscribe, img {
+    margin: 0 auto 49px;
+    max-width: 170px;
+}
+.page-subscribe {
+    padding: 50px 0 20px ;
+}
+
+.page-app {
+    padding: 250px 0 82px 0;
+}
+.content-app {
+    width: 100%;
+    text-align: center;
+}
+.video-app {
+    top: -250px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.video-app img{
+    width: 337px;
+    padding-left: 50px;
 }
 }
-
-
-
-
-
-@media (max-width:1050px) {
-    .list-company-item {
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-        margin-bottom: 50px;
-    }
-    .list-company-item span {
-        margin: 0 auto;
-    }
-    .page-company {
-        padding: 50px 0 20px ;
-    }
-    .grid {
-        
-        grid-template-areas: "a b "
-                             "c d "
-                             "e f"
-                             "g "
-                             "h";
-       
-        }
-        .grid h2 {
-            text-align: center;
-        }
-        .grid h2 span {
-            margin-bottom: 10px;
-        }
-        .subscribe-content-block { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse;}
-        .box-subscribe-child {
-            -ms-flex-preferred-size: 100%;
-                flex-basis: 100%;
-            text-align: center;
-        }
-        .box-subscribe-text {  margin: 0 auto 30px;}
-        .box-subscribe, img {
-            margin: 0 auto 49px;
-            max-width: 170px;
-        }
-        .page-subscribe {
-            padding: 50px 0 20px ;
-        }
+@media (max-width:930px) {
+.intro {
+    display: none;
+}
+.box-price {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+}
+@media (max-width:700px) {
+.list-stat>li {
+    flex-basis: 34%;
+    margin-bottom: 30px;
+}
 }
 
 @media (max-width:600px) {
