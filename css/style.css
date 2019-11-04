@@ -1365,7 +1365,7 @@ display: flex;
 justify-content: center;
 }
 .box-header {
-padding: ;
+padding: 0;
 margin-bottom: 100px;
 }
 .page-header {
@@ -1407,7 +1407,7 @@ grid-template-areas: "a b "
 .box-subscribe-text {  margin: 0 auto 30px;}
 .box-subscribe, img {
     margin: 0 auto 49px;
-    max-width: 170px;
+    max-width: 270px;
 }
 .page-subscribe {
     padding: 50px 0 20px ;
@@ -1437,13 +1437,20 @@ grid-template-areas: "a b "
 .intro {
     display: none;
 }
+.settings-icon {
+display: none;
+}
+.close-img {
+    display: none;
+    }
 .box-price {
-    flex-basis: 100%;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
+display: flex;
+width: 100%;
+margin-bottom: 20px;
+flex-wrap: wrap; 
+max-width: 500px; 
+margin: 0 18%;
+text-align: center;
 }
 }
 @media (max-width:700px) {
@@ -1454,13 +1461,36 @@ grid-template-areas: "a b "
 }
 
 @media (max-width:600px) {
+    .wrap {
+        max-width: 1110px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 75px;
+    }
     h1 {
         font-size: 40px;
         margin: 0 auto 30px;
     }
+.h2 {text-align: center;
+    margin: 0 auto 30px;
+}
+.title-40{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 5px 0;
+}
+ .title-40 span {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 5px 0;
+}
+
     .btn-primary {
         font-size: 11px;
-        letter-spacing: 2.5px;
+        letter-spacing: 0.5px;
         font-weight: 700;
         text-transform: uppercase;
         padding: 15px 40px;
@@ -1476,7 +1506,7 @@ grid-template-areas: "a b "
         border: 1px solid #cfdeea;
         padding: 15px 40px;
         border-radius: 30px;
-        letter-spacing: 2.5px;
+        letter-spacing: 0.5px;
         -webkit-transition: 0.3s;
         transition: 0.3s;
         margin-bottom: 15px;
@@ -1489,4 +1519,99 @@ grid-template-areas: "a b "
         max-width: 320px;
         margin: 0 auto;
     }
+    .btn-info, .free-350 {
+        padding: 15px 40px;
+        margin: 0 auto;
+        font-size: 12px;
+        max-width: 320px;
+        letter-spacing: 0.5px;
+    }
+.content_smart {
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+.val, span {
+    font-size: 12px;
+}
+.page-control, .page-analytics{
+    padding: 47px 0 47px 0;
+}
+
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.title-footer {
+margin-top: 25px;
+}
+
+.page-team .title-40 {
+    color: #fff;
+    padding-bottom: 150px;
+}
+.page-team {
+    text-align: center;
+    background-image: none;
+    background-color: #1085e4;
+    padding: 57px 0 57px 0;
+    
+}
+.box-team {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+.box-team-item {
+    margin-bottom: 100px;
+}
+
+.box-clients {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+.box-clients-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-top: 25px;
+}
+.box-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box-info img {
+width: 55%;
+margin-top: 15px;
+}
+.position {
+margin: 5px;
+}
+.page-clients::before{
+    background-image: none;
+    background-color: #1085E4;
+    padding-bottom: 20px;
+}
+.btn-group a + a {
+     margin-left: 0; 
+}
+
+
 }
