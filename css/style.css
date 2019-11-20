@@ -612,19 +612,32 @@ margin-left: -7px;
 .page-app-list>li {
 display: inline-block;
 }
-.page-app-list>li>a {
+/*.page-app-list>li>a {
 background-image: url(../img/gands.png);
 display: block;
 width: 185px;
 height: 69px;
 background-repeat: no-repeat;
-}
+}*/
 .page-app-list>li>a.page-app-android {
 background-position: 0 0;
+background-image: url(../img/Layer7.png);
+display: block;
+width: 163px;
+height: 55px;
+background-repeat: no-repeat;
+border-radius: 10px 10px 10px 10px;
 }
 
 .page-app-list>li>a.page-app-ios {
-background-position: -191px 0;
+    background-position: 0 0;
+    background-image: url(../img/Layer8.png);
+    display: block;
+    width: 163px;
+    height: 55px;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 28px;
 }
 .intro {
 color: rgba(0, 0, 0, 0.04);
@@ -1197,7 +1210,7 @@ margin-left: 20px;
 }
 
 
-/*  */
+
 
 /* PAGE */
 
@@ -1325,6 +1338,7 @@ right: 0;
 }
 .video-app, img {
 width: 482px;
+
 }
 }
 @media (max-width:1300px) {
@@ -1466,7 +1480,7 @@ text-align: center;
         margin: 0 auto;
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 75px;
+        padding-top: 15px;
     }
     h1 {
         font-size: 40px;
